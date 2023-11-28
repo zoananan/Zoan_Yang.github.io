@@ -1,0 +1,163 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhaoan Yang's Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        
+        section {
+            margin: 20px 0;
+        }
+        
+        h2 {
+            color: #333;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        .content-section {
+            display: none;
+        }
+        
+        .active {
+            display: block;
+        }
+        
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        nav a {
+            padding: 10px;
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Zhaoan Yang (Zoan)'s Website</h1>
+    </header>
+
+    <nav>
+        <a onclick="switchPage('aboutMe')">About Me</a>
+        <a onclick="switchPage('resourceShare')">Resource Share</a>
+    </nav>
+
+    <section id="aboutMe" class="content-section active">
+        <a href="https://drive.google.com/file/d/1n87HNhFtC-xxA0D5Xh1SUo8P1FTDF8AM/view?usp=sharing">My CV</a>
+        <h2>Education</h2>
+
+        <li>Nankai University - World Economy Master of Research (Sep 2021 - Jun 2024) <p>Supervisor:<a href="http://en.economics.nankai.edu.cn/2021/1129/c16714a417879/page.htm">Prof. JiaDong Tong</a></p>
+        </li>
+
+        <li>University of Birmingham - Mathematical Finance Master of Taught (Sep 2022 - Sep 2023)<p>Supervisor:<a href="https://www.birmingham.ac.uk/staff/profiles/maths/li-hui.aspx">Dr.HuiLi</a> <a href="https://www.birmingham.ac.uk/staff/profiles/maths/leppinen-david.aspx">Dr.David Leppinen</a></p>
+            <p> Thesis:Revisiting the Relationship Between
+                Trade Openness and Economic Growth:
+                A Meta-analysis<a href="https://www.overleaf.com/read/wnwvnpjbkycj#be0919">Latex</a> <a href="https://drive.google.com/file/d/1k3YDu59_QRqqSvq1E7BZs3q15U-IlwaC/view?usp=sharing">Code</a></p>
+        </li>
+        <li>Nankai University - International Economics and Trade Bachelor (Sep 2017 - Jun 2021)</li>
+
+        <h2>Research and Practical Experience</h2>
+
+        <li>Tongji-MIT City Science Lab — Research Intern (Dec 2022 - Present) <a href="https://www.socitydao.org/home">Link</a></li>
+        <li>National School of Development, Peking University — Research Assistant (Aug 2021 - Mar 2022) </li>
+        <li>National Students Innovation and Entrepreneurship Projects, Nankai University — Member (Dec 2018 - Mar 2021) <a href="https://drive.google.com/drive/folders/1PFQhn-_bHEMlY9ZcHi0_k7lYMVvNmZV_?usp=drive_link">Link </a></li>
+
+        <h2>Professional Experience</h2>
+
+        <li>TianFeng Securities Research Institute — Strategy Analyst Assistant Intern (Nov 2021 - Aug 2022)</li>
+        <li>CITIC Bank — Summer Intern of International Settlement Department (Jun 2020 - Aug 2020)</li>
+
+        <h2>Miscellaneous</h2>
+
+        <li>Teacher Assistant: Accounting(2021), Access Database(2019)</li>
+        <li>Exchange Student: Hokkaido University Summer Project(2019) — Region Economy</li>
+        <li>Languages: English, Mandarin</li>
+        <li>Interests: Harmonica (College Association), German (College Club)</li>
+
+        <h2>Research Interests</h2>
+
+        <li>-Digital Trade,Macroeconomics,Environmental Economics </li>
+        <li>-Machine Learning,especially NLP</li>
+        <li>-DeFi, Cryptocurrencies, Blockchain.</li>
+
+        <h2>——</h2>
+        <ul>
+            <li>-Digital Trade,Macroeconomics,Environmental Economics </li>
+            <li>-Machine Learning,especially NLP</li>
+            <li>-DeFi, Cryptocurrencies, Blockchain.</li>
+        </ul>
+
+    </section>
+
+    <section id="resourceShare" class="content-section">
+        <h2>Resource Share</h2>
+        <li> <a href="https://drive.google.com/drive/folders/1Ab2wOJzjDAXxGiArOekJMPkKKWNtaXPp?usp=sharing">Meta Analysis</a></li>
+        <li>Work in progress:)</li>
+    </section>
+
+    <footer>
+        <p>Email: zxy269@alumni.bham.ac.uk </p>
+        <p>1712119@mail.nankai.edu.cn</p>
+        <p>Address: Nankai University, #94 Weijin Road, Tianjin, P.R. China, PO: 300071</p>
+    </footer>
+
+    <script>
+        function switchPage(pageId) {
+            // Hide all content sections
+            var sections = document.querySelectorAll('.content-section');
+            sections.forEach(function (section) {
+                section.classList.remove('active');
+            });
+        
+            // Show the selected section
+            var selectedSection = document.getElementById(pageId);
+            if (selectedSection) {
+                selectedSection.classList.add('active');
+            }
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
