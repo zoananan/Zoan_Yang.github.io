@@ -139,23 +139,25 @@
         <p>Address: Nankai University, #94 Weijin Road, Tianjin, P.R. China, PO: 300071</p>
     </footer>
 
-    <script>
+   <script>
         function switchPage(pageId) {
-            // Hide all content sections
             var sections = document.querySelectorAll('.content-section');
             sections.forEach(function (section) {
                 section.classList.remove('active');
             });
-        
-            // Show the selected section
-            var selectedSection = document.getElementById(pageId);
-            if (selectedSection) {
-                selectedSection.classList.add('active');
+
+            if (pageId === 'resourceShare') {
+                var password = prompt("Please enter the password to access this section:");
+                if (password === "PigHasDream") { // Replace "yourpassword" with your actual password
+                    document.getElementById(pageId).classList.add('active');
+                } else {
+                    alert("Incorrect password!");
+                }
+            } else {
+                document.getElementById(pageId).classList.add('active');
             }
         }
     </script>
-
-
 
 
 </body>
